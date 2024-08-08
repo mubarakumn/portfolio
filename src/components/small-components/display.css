@@ -1,0 +1,123 @@
+.display{
+    /* border:10px solid blue; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.laptop img{
+    /* border:2px solid red; */
+    width: 100%;
+    height: 100%;
+}
+.display-Content{
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+}
+.inner-content,
+.inner-arrow{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-3);
+    cursor: pointer;
+}
+.visible{
+    opacity: 1.0;
+    top: -150px;
+}
+.notVisible{
+    opacity: 0;
+}
+.inner-arrow i{
+    transition: ease-in 2s;
+}
+.inner-arrow i:hover{
+    rotate: 180deg;
+}
+#ShowImg{
+    background-image: url(/mypic.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 40px;
+    border-radius: 50%;
+    border: 7px solid var(--bg-1);
+    box-shadow: 0px 0px 3px 2px black;
+    transition: all ease-in 1s;
+}
+.inner-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+.inner-icons .icon-1 {
+    color: white;
+}
+.inner-icons .icon-2 {
+    color: green;
+}
+.inner-icons .icon-3 {
+    color: rgb(0, 119, 255);
+}
+@media screen and (max-width: 520px){
+    .display{
+        width: 350px;
+        height: 200px;
+        padding: 10px;
+    }
+    .laptop img{
+        height: 100%;
+    }
+    .display-Content{
+        gap: 0px;
+        top: 0px;
+        left: 35px;
+        /* border: 1px solid red; */
+    }
+    .inner-content,
+    .inner-arrow{
+        /* border: 1px solid red; */
+        font-size: 8px;
+        margin: 10px;
+    }
+    .inner-content{
+        margin-top: 40px;
+    }
+    .inner-arrow{
+        /* margin-bottom: 10px; */
+    }
+    #ShowImg{
+        width: 80px;
+        height: 80px;
+        top: -70px;
+        right: 90px;
+        border: 2px solid var(--bg-1);
+    }
+    .inner-icons{
+        margin-top: 15px;
+        /* border: 1px solid red; */
+        font-size: 10px;
+    }
+}

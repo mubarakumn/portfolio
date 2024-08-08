@@ -1,0 +1,36 @@
+.sidenav{
+    width: 36px;
+    height: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background: linear-gradient(130deg, var(--blue-gray-1), var(--blue-gray-2));
+    box-shadow:  5px 5px 10px #cacaca, -5px -5px 10px #f6f6f6;
+    z-index: 2;
+    position: fixed; 
+    top: 50%;
+    left: 5px;  
+    bottom: 50%;
+    cursor: pointer; 
+    /* overflow-x: hidden; */
+}
+.sidenav .svg-1{
+    fill: var(--bg-2);
+}
+.sidenav .svg-2{
+    fill: var(--blue-gray-2);
+}
+.sidenav .svg-3{
+    fill: var(--blue-gray-1);
+}
+.sidenav .svg-4{
+    fill: var(--bg-1);
+}
+@media screen and (max-width: 520px) {
+    .sidenav{
+        top: 80%;
+        left: 2px;  
+    }
+}
